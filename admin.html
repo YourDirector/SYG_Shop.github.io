@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - File Sales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="items.html">Items</a>
+        <a href="buy.html">Buy</a>
+        <a href="licenses.html">Licenses</a>
+        <a href="tickets.html">Tickets</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+    <section id="admin">
+        <h1>Admin Panel</h1>
+        <p>Restricted access: Enter passcode to access admin options.</p>
+        <input type="password" id="admin-passcode" placeholder="Enter passcode">
+        <button onclick="authenticateAdmin()">Submit</button>
+        <div id="admin-tickets" style="display:none;">
+            <h2>View Tickets</h2>
+            <textarea id="ticket-message" placeholder="Enter ticket details"></textarea><br>
+            <button onclick="sendTicket()">Send Ticket</button>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>

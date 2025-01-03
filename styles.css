@@ -1,0 +1,65 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+section {
+    margin-top: 80px;
+    text-align: center;
+    padding: 20px;
+}
+/* IP Prompt Styles */
+#ip-prompt {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 10;
+    transition: bottom 0.5s ease-in-out;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#ip-prompt div {
+    text-align: center;
+}
+
+#ip-prompt button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#ip-prompt button:hover {
+    background: #444;
+    color: white;
+}
